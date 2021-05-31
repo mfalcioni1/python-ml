@@ -1,3 +1,7 @@
+# Additional Resources
+
+[CMU Deep Learning Lecture Notes](https://sebastianraschka.com/pdf/lecture-notes/stat479ss19/)
+
 # Active Learning
 
 ## Questions
