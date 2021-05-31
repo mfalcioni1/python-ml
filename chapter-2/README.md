@@ -10,6 +10,6 @@
 
 2. 
 - Initialize weights to 0 or a small random number
-- For each training example, [b]x[/b](i): 
+- For each training example, [b]x[\b](i): 
     + compute y-hat 
     + update the weights based on a learning rate when necessary
