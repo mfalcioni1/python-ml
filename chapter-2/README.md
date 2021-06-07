@@ -25,6 +25,12 @@
 
 10. What is batch gradient descent?
 
+11. Why is stochastic gradient descent a useful alternative to batch gradient descent?
+
+12. What are some of the advantages of stochastic gradient descent over batch gradient descent?
+
+13. What is mini-batch gradient descent?
+
 ## Answers
 1. The MCP neuron model is a simplification of the interconnectivity of the brain. Neurons in this model either fire or don't depending on the brain function. This is how the perceptron learning rule is coded. (pg20)
 
@@ -53,3 +59,12 @@
 (pg38-39)
 
 10. When the weight update is calculated for all examples in our training data instead of updating the weights incrementally after each training example.
+
+11. When faced with data with millions or more observations it becomes computationally intensive to copute the gradient of an entire training batch. Instead, with stochastic gradient descent we compute the gradient and the weight updates per training example. (pg46)
+
+12. (pg47)
+    + Although SGD can be considered an approximation of BGD, it will often converge faster because of the more frequent updates
+    + Given the gradient is calculated per training example, the error surface is noisier, which can have the advantage that SGD will escape shallow local minima more readily when working with non-linear cost functions.
+    + SGD can be used in online learning. Online learning has our model training on the fly as new training data arrives.
+
+13. Mini-batch gradient descent is a compromise between SGD and BGD. It is the practice of applying BGD to smaller sets of data, for example 32 training examples at a time. This let's us gain the advantages of faster convergence from SGD due to more weight updates, and the performance gains of vectorization when using BGD.
