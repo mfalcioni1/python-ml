@@ -28,7 +28,7 @@
 ## Answers
 1. No single classifier works best across multiple scenarios. (pg. 53)
 
-2. It standardizings the continuous variables by subtracting the estimated mean and then dividing by the estimated standard deviation (normalization). (pg.56)
+2. It standardizings the continuous variables by subtracting the estimated mean and then dividing by the estimated standard deviation, resulting in the variable to now have mean 0 and unit variance (equal to 1). (pg.56)
 
 3. They use one-vs-all classification. (pg. 56)
 
